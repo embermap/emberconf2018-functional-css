@@ -31,4 +31,4 @@ To get this app on your computer,
 
 ![image](https://user-images.githubusercontent.com/2922250/37057799-89882954-2156-11e8-97e6-c4df4340ad03.png)
 
-**🎉 See you Monday! 🎊**
+See you Monday! 👋
