@@ -1,0 +1,26 @@
+<li class='my-4 flex flex-row items-center'>
+  {{#link-to 'step' model
+    class='block py-2 text-black no-underline border-l-4 border-transparent
+    hover:opacity-50 transition flex-grow'
+    activeClass='border-blue hover:opacity-100'
+  }}
+    <div class="flex">
+      <div class="w-1/4 text-3xl text-right pr-3">
+        {{step}}
+      </div>
+      <div class='pt-px'>
+        <p class='leading-tight'>
+          {{yield}}
+        </p>
+        <p class="mt-1 text-sm opacity-50">
+          {{type}}
+        </p>
+      </div>
+    </div>
+  {{/link-to}}
+  {{#if mockup}}
+    <a href={{mockup}} class='transition text-black hover:text-grey' target='_blank'>
+      {{fa-icon 'external-link'}}
+    </a>
+  {{/if}}
+</li>

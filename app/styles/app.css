@@ -1,22 +1,5 @@
-body {
-  background-color: #4DC0B5;
-  color: #0D3331;
-}
-.home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 33vh;
-  font-family: sans-serif;
-}
+@import 'tailwind.css';
 
-h1 {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 40px;
-}
-h2 {
-  margin-top: 20px;
-  font-weight: 500;
+.transition {
+  transition: all 0.15s;
 }

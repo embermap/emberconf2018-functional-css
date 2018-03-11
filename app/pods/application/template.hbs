@@ -1,0 +1,20 @@
+<div class="flex">
+  <div class="w-64 flex-no-shrink min-h-screen p-4 border-r bg-grey-lightest">
+    <p class='mt-3 text-xl'>
+      {{#link-to 'application' class='text-black no-underline'}}
+        Functional CSS
+      {{/link-to}}
+    </p>
+    <ul class='list-reset mt-8'>
+      {{#nav-link '1-lecture' step=1 type='Lecture'}}
+        Intro to Functional CSS
+      {{/nav-link}}
+      {{#nav-link '2-interactive-lecture' step=2 type='Interactive lecture' mockup='/images/2-mockup.png'}}
+        Our first template
+      {{/nav-link}}
+    </ul>
+  </div>
+  <div class="flex-grow font-sans min-h-screen">
+    {{outlet}}
+  </div>
+</div>

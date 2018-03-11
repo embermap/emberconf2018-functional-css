@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'emberconf2018-functional-css',
+    podModulePrefix: 'emberconf2018-functional-css/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
