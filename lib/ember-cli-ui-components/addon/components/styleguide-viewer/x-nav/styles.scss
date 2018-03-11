@@ -25,6 +25,12 @@
   }
 
   &__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__items {
     margin-top: 20px;
   }
 }
