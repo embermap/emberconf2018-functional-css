@@ -1,5 +1,9 @@
 {
   "name": "training",
+  "dependencies": {
+    "ember-cli-babel": "*",
+    "ember-cli-htmlbars": "*"
+  },
   "keywords": [
     "ember-addon"
   ]
