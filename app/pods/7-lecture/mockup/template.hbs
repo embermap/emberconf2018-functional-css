@@ -1,0 +1,123 @@
+<div class="bg-blue w-full h-screen font-sans">
+
+  <div class="flex p-2 bg-blue-dark items-center">
+    <div class="mx-auto">
+      <h1 class="text-blue-lighter text-xl flex items-center font-sans italic">
+        <svg class="fill-current h-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M41 4H9C6.24 4 4 6.24 4 9v32c0 2.76 2.24 5 5 5h32c2.76 0 5-2.24 5-5V9c0-2.76-2.24-5-5-5zM21 36c0 1.1-.9 2-2 2h-7c-1.1 0-2-.9-2-2V12c0-1.1.9-2 2-2h7c1.1 0 2 .9 2 2v24zm19-12c0 1.1-.9 2-2 2h-7c-1.1 0-2-.9-2-2V12c0-1.1.9-2 2-2h7c1.1 0 2 .9 2 2v12z"/></svg>
+        Trello
+      </h1>
+    </div>
+  </div>
+
+  <div class="flex m-4 justify-between">
+    <div class="flex">
+      <h3 class="text-white mr-4">UberForPets.com</h3>
+
+      <ul class="list-reset text-white hidden flex">
+        <li>
+          <span class="px-2 text-sm">
+            Acme, Inc.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex px-4 pb-8 items-start overflow-x-scroll">
+    {{#tr-list}}
+      <div class="flex justify-between py-1">
+        <h3 class="text-sm">New landing page</h3>
+        {{tr-dots}}
+      </div>
+      <div class="mt-2">
+        {{#tr-card}}
+          Do a mobile first layout
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Check the meta tags
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Check the responsive layout on all devices
+
+          {{tr-checklist complete=3 total=5}}
+        {{/tr-card}}
+      </div>
+    {{/tr-list}}
+
+    {{#tr-list}}
+      <div class="flex justify-between py-1">
+        <h3 class="text-sm">Old landing</h3>
+        {{tr-dots}}
+      </div>
+      <div class="mt-2">
+        {{#tr-card}}
+          Delete all references from the wiki
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Remove analytics code
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Whatever
+        {{/tr-card}}
+
+        {{#tr-card}}
+          <p>Think more tasks for this example</p>
+          {{tr-alert count=2}}
+        {{/tr-card}}
+      </div>
+    {{/tr-list}}
+
+    {{#tr-list}}
+      <div class="flex justify-between py-1">
+        <h3 class="text-sm">Do more cards</h3>
+        {{tr-dots}}
+      </div>
+      <div class="mt-2">
+        {{#tr-card}}
+          Delete all references from the wiki
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Remove analytics code
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Whatever
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Delete all references from the wiki
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Remove analytics code
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Whatever
+        {{/tr-card}}
+
+        {{#tr-card}}
+          <p>Think more tasks for this example</p>
+          {{tr-alert count=2}}
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Delete all references from the wiki
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Remove analytics code
+        {{/tr-card}}
+
+        {{#tr-card}}
+          Whatever
+        {{/tr-card}}
+      </div>
+    {{/tr-list}}
+  </div>
+</div>
