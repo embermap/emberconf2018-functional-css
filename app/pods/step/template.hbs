@@ -1,1 +1,5 @@
-{{component (concat model)}}
+{{#if onSolution}}
+  {{component (concat model '/solution')}}
+{{else}}
+  {{component (concat model)}}
+{{/if}}

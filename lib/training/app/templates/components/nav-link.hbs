@@ -19,8 +19,9 @@
     </div>
   {{/link-to}}
   {{#if mockup}}
-    <a href={{mockup}} class='transition text-black hover:text-grey' target='_blank'>
+    {{#link-to 'step.solution' model (query-params hide=true)
+      class='transition text-black hover:text-grey' target='_blank'}}
       {{fa-icon 'external-link'}}
-    </a>
+    {{/link-to}}
   {{/if}}
 </li>
