@@ -5,7 +5,7 @@
     activeClass='border-blue hover:opacity-100'
   }}
     <div class="flex">
-      <div class="w-1/4 text-3xl text-right pr-3">
+      <div class="w-1/5 text-3xl text-right pr-3">
         {{step}}
       </div>
       <div class='pt-px'>
@@ -18,9 +18,9 @@
       </div>
     </div>
   {{/link-to}}
-  {{#if mockup}}
+  {{#if solution}}
     {{#link-to (concat route '.solution') (query-params hide=true)
-      class='transition text-black hover:text-grey' target='_blank'}}
+      class='transition text-black hover:text-grey pl-1' target='_blank'}}
       {{fa-icon 'external-link'}}
     {{/link-to}}
   {{/if}}

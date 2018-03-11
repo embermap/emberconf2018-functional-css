@@ -16,6 +16,10 @@ Router.map(function() {
     this.route('exercise', { path: '/' });
     this.route('solution');
   });
+  this.route('4-interactive-lecture', function() {
+    this.route('exercise', { path: '/' });
+    this.route('solution');
+  });
 });
 
 export default Router;
