@@ -29,6 +29,10 @@ Router.map(function() {
     this.route('exercise', { path: '/' });
     this.route('mockup');
   });
+  this.route('8-exercise', function() {
+    this.route('exercise', { path: '/' });
+    this.route('mockup');
+  });
 });
 
 export default Router;
