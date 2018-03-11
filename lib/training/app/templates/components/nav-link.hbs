@@ -1,5 +1,5 @@
 <li class='my-4 flex flex-row items-center'>
-  {{#link-to 'step' model
+  {{#link-to route
     class='block py-2 text-black no-underline border-l-4 border-transparent
     hover:opacity-50 transition flex-grow'
     activeClass='border-blue hover:opacity-100'
@@ -19,7 +19,7 @@
     </div>
   {{/link-to}}
   {{#if mockup}}
-    {{#link-to 'step.solution' model (query-params hide=true)
+    {{#link-to (concat route '.solution') (query-params hide=true)
       class='transition text-black hover:text-grey' target='_blank'}}
       {{fa-icon 'external-link'}}
     {{/link-to}}

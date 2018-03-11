@@ -7,7 +7,13 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('step', { path: '/:id' }, function() {
+  this.route('1-lecture');
+  this.route('2-interactive-lecture', function() {
+    this.route('exercise', { path: '/' });
+    this.route('solution');
+  });
+  this.route('3-exercise', function() {
+    this.route('exercise', { path: '/' });
     this.route('solution');
   });
 });
