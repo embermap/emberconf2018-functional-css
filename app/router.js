@@ -8,17 +8,21 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('1-lecture');
-  this.route('2-interactive-lecture', function() {
+  this.route('2-lecture', function() {
     this.route('exercise', { path: '/' });
-    this.route('solution');
+    this.route('mockup');
   });
   this.route('3-exercise', function() {
     this.route('exercise', { path: '/' });
-    this.route('solution');
+    this.route('mockup');
   });
-  this.route('4-interactive-lecture', function() {
+  this.route('4-lecture', function() {
     this.route('exercise', { path: '/' });
-    this.route('solution');
+    this.route('mockup');
+  });
+  this.route('5-exercise', function() {
+    this.route('exercise', { path: '/' });
+    this.route('mockup');
   });
 });
 

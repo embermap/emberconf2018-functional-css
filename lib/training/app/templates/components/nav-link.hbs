@@ -18,10 +18,12 @@
       </div>
     </div>
   {{/link-to}}
-  {{#if solution}}
-    {{#link-to (concat route '.solution') (query-params hide=true)
+  {{#if mockup}}
+    {{#link-to (concat route '.mockup') (query-params hide=true)
       class='transition text-black hover:text-grey pl-1' target='_blank'}}
       {{fa-icon 'external-link'}}
     {{/link-to}}
+  {{else}}
+    {{fa-icon 'fw'}}
   {{/if}}
 </li>
