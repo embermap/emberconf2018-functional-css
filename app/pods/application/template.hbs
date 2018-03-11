@@ -1,5 +1,5 @@
 <div class="flex">
-  <div class="w-64 flex-no-shrink min-h-screen p-4 border-r bg-grey-lightest {{if isHidingSidebar 'hidden'}}">
+  <div class="w-64 flex-no-shrink h-screen overflow-y-scroll p-4 border-r bg-grey-lightest {{if isHidingSidebar 'hidden'}}">
     <p class='mt-3 text-xl'>
       {{#link-to 'application' class='text-center text-black no-underline text-base font-bold uppercase'}}
         Functional<span class="text-blue">CSS</span>
@@ -29,6 +29,12 @@
       {{/nav-link}}
       {{#nav-link '8-exercise' step=8 type='exercise' mockup=true}}
         Your turn
+      {{/nav-link}}
+      {{#nav-link '9-lecture' step=9 type='Lecture'}}
+        Component extraction retro
+      {{/nav-link}}
+      {{#nav-link '10-lecture' step=10 type='Lecture'}}
+        UI Components
       {{/nav-link}}
     </ul>
   </div>

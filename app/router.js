@@ -33,6 +33,11 @@ Router.map(function() {
     this.route('exercise', { path: '/' });
     this.route('mockup');
   });
+  this.route('9-lecture');
+  this.route('10-lecture', function() {
+    this.route('exercise', { path: '/' });
+    this.route('mockup');
+  });
 });
 
 export default Router;
