@@ -38,6 +38,11 @@ Router.map(function() {
     this.route('exercise', { path: '/' });
     this.route('mockup');
   });
+  this.route('11-exercise', function() {
+    this.route('exercise', { path: '/' });
+    this.route('mockup');
+  });
+  this.route('12-lecture');
 });
 
 export default Router;
