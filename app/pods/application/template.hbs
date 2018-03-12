@@ -9,44 +9,57 @@
       {{#nav-link '1-lecture' step=1 type='Lecture'}}
         Intro to Functional CSS
       {{/nav-link}}
-      {{#nav-link '2-lecture' step=2 type='Lecture' mockup=true}}
+      {{#nav-link '2-lecture' step=2 type='Lecture'}}
         Our first template
       {{/nav-link}}
-      {{#nav-link '3-exercise' step=3 type='Exercise' mockup=true}}
-        Your turn
+      {{#nav-link '3-exercise' step=3}}
+        Exercise: Paragraphs
       {{/nav-link}}
-      {{#nav-link '4-lecture' step=4 type='Lecture' mockup=true}}
-        Customizing Tailwind
+      {{#nav-link '4-exercise' step=4}}
+        Exercise: Boxes
       {{/nav-link}}
-      {{#nav-link '5-exercise' step=5 type='Exercise' mockup=true}}
-        Your turn
+      {{#nav-link '5-lecture' step=5 type='Lecture'}}
+        Class reference
       {{/nav-link}}
-      {{#nav-link '6-lecture' step=6 type='Lecture'}}
-        Functional CSS Recap
+      {{#nav-link '6-exercise' step=6}}
+        Exercise: Button
       {{/nav-link}}
-      {{#nav-link '7-lecture' step=7 type='Lecture'}}
-        Scaling Functional CSS in Ember
+      {{#nav-link '7-exercise' step=7}}
+        Exercise: 2 Buttons
       {{/nav-link}}
-      {{#nav-link '8-exercise' step=8 type='exercise' mockup=true}}
-        Your turn
+      {{#nav-link '8-exercise' step=8}}
+        Exercise: Hero
       {{/nav-link}}
       {{#nav-link '9-lecture' step=9 type='Lecture'}}
-        Component extraction retro
+        Customizing Tailwind
       {{/nav-link}}
-      {{#nav-link '10-lecture' step=10 type='Lecture'}}
-        UI Components
+      {{#nav-link '10-exercise' step=10}}
+        Exercise: Ember Orange
       {{/nav-link}}
-      {{#nav-link '11-exercise' step=11 type='Exercise'}}
-        Your turn
+
+      {{#nav-link '11-lecture' step=11 type='Lecture'}}
+        Functional CSS Recap
       {{/nav-link}}
       {{#nav-link '12-lecture' step=12 type='Lecture'}}
+        Scaling Functional CSS in Ember
+      {{/nav-link}}
+      {{#nav-link '13-exercise' step=13}}
+        Exercise: Component extraction
+      {{/nav-link}}
+      {{#nav-link '14-lecture' step=14 type='Lecture'}}
+        UI Components
+      {{/nav-link}}
+      {{#nav-link '15-exercise' step=15}}
+        Exercise: UI Components
+      {{/nav-link}}
+      {{#nav-link '16-lecture' step=16 type='Lecture'}}
         Closing
       {{/nav-link}}
     </ul>
   </div>
   <div class="flex-grow font-sans min-h-screen">
     <a {{action (toggle 'isHidingSidebar' this)}} href=""
-      class='absolute transition inline-block p-4 text-black opacity-25 hover:opacity-100'>
+      class='absolute z-10 transition inline-block p-4 text-black opacity-25 hover:opacity-100'>
       {{fa-icon (if isHidingSidebar 'chevron-right' 'chevron-left')}}
     </a>
 

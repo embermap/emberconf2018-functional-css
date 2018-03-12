@@ -1,6 +1,6 @@
 <li class='my-4 flex flex-row items-center'>
   {{#link-to route
-    class='block py-2 text-black no-underline border-l-4 border-transparent
+    class='block my-1 text-black no-underline border-l-4 border-transparent
     hover:opacity-50 transition flex-grow'
     activeClass='border-blue hover:opacity-100'
   }}
@@ -8,22 +8,16 @@
       <div class="w-1/4 flex-no-shrink text-3xl text-right pr-3">
         {{step}}
       </div>
-      <div class='pt-px'>
+      <div class='pt-px flex flex-col justify-center'>
         <p class='leading-tight'>
           {{yield}}
         </p>
-        <p class="mt-1 text-sm opacity-50">
-          {{type}}
-        </p>
+        {{#if type}}
+          <p class="mt-1 text-sm opacity-50">
+            {{type}}
+          </p>
+        {{/if}}
       </div>
     </div>
   {{/link-to}}
-  {{#if mockup}}
-    {{#link-to (concat route '.mockup') (query-params hide=true)
-      class='transition text-black hover:text-grey pl-1' target='_blank'}}
-      {{fa-icon 'external-link'}}
-    {{/link-to}}
-  {{else}}
-    {{fa-icon 'fw'}}
-  {{/if}}
 </li>
