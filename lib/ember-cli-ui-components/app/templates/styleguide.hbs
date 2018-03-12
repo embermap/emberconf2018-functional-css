@@ -1,0 +1,13 @@
+
+{{#styleguide-viewer as |viewer|}}
+  {{#viewer.nav as |nav|}}
+    {{#each componentNames as |name|}}
+      {{nav.item name 'styleguide.components.component' name}}
+    {{/each}}
+  {{/viewer.nav}}
+
+  {{#viewer.main}}
+    {{outlet}}
+  {{/viewer.main}}
+
+{{/styleguide-viewer}}

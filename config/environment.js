@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'emberconf2018-functional-css',
+    podModulePrefix: 'emberconf2018-functional-css/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -16,11 +17,15 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    
+    'ember-component-css': {
+      namespacing: false
     }
+
   };
 
   if (environment === 'development') {

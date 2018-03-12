@@ -1,0 +1,25 @@
+.transition {
+  transition: all 0.15s;
+}
+
+.stripe-button {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11)
+}
+.stripe-button:hover {
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.stripe-button-purple {
+  background-color: #6772e5;
+}
+
+.stripe-button-purple:hover {
+  background-color: #7795f8;
+}
+
+.stripe-button-white:hover {
+  color: #6772e5;
+}
+.stripe-button-white:hover {
+  color: #7795f8;
+}
